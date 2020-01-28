@@ -20,18 +20,14 @@ while len(player_cards) != 2:
     if len(player_cards) ==2:
         print ("You have ", player_cards)
 # Sum of Dealer cards
-if sum(dealer_cards) < 17:
-    dealer_cards.append(random.randint(1, 11))
-if sum(dealer_cards) < 17:
-    dealer_cards.append(random.randint(1, 11))
-if sum(dealer_cards) < 17:
-    dealer_cards.append(random.randint(1, 11))
-if sum(dealer_cards) < 17:
-    dealer_cards.append(random.randint(1, 11))
-    if sum(dealer_cards) == 21:
+if sum(dealer_cards) == 21:
     print("Dealer has 21 and wins")
 elif sum(dealer_cards) > 21:
     print ("Dealer Busts,You win!")
+if sum(dealer_cards) < 17:
+    dealer_cards.append(random.randint(1, 11))
+if sum(dealer_cards) < 17:
+    dealer_cards.append(random.randint(1, 11))
 # Sum of Player Cars
 while sum(player_cards) < 21:
     action_taken = str(input("Do you want to stay or hit? "))
