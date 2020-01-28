@@ -28,6 +28,10 @@ if sum(dealer_cards) < 17:
     dealer_cards.append(random.randint(1, 11))
 if sum(dealer_cards) < 17:
     dealer_cards.append(random.randint(1, 11))
+if sum(dealer_cards) < 17:
+    dealer_cards.append(random.randint(1, 11))
+if sum(dealer_cards) < 17:
+    dealer_cards.append(random.randint(1, 11))
 # Sum of Player Cars
 while sum(player_cards) < 21:
     action_taken = str(input("Do you want to stay or hit? "))
